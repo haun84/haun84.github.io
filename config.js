@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Haun Vuepress Docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -31,7 +31,7 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: true,
+    lastUpdated: false,
     nav: [
       {
         text: 'Guide',
@@ -70,5 +70,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/last-updated',
   ]
 }
