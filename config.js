@@ -68,6 +68,7 @@ module.exports = {
           children: [
             '',
             'market_risk',
+            'credit_risk',
           ]
         }
       ],
