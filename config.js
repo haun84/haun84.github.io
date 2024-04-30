@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Haun Vuepress Docs',
+  title: 'Haun Vuepress Blog',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -42,7 +42,7 @@ module.exports = {
         link: '/config/'
       },
       {
-        text: 'Risk',
+        text: 'Risk Management',
         link: '/risk_management/'
       },
       {
@@ -58,6 +58,16 @@ module.exports = {
           children: [
             '',
             'using-vue',
+          ]
+        }
+      ],
+      '/risk_management/': [
+        {
+          title: 'Risk Management',
+          collapsable: false,
+          children: [
+            '',
+            'market_risk',
           ]
         }
       ],
