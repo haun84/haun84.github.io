@@ -78,6 +78,14 @@ function sidebarFinance(): DefaultTheme.SidebarItem[] {
           { text: 'Financial Infrastructure', link: 'financial-infrastructure' }
         ]
       },
+      {
+        text: 'Financial Stability',
+        collapsed: false,
+        base: '/finance/financial-stability/',
+        items: [
+          { text: 'Financial Stability', link: 'index' },
+        ]
+      }
     ]
   }
 
