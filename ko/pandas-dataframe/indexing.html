@@ -7,12 +7,12 @@
     <meta name="description" content="데이터프레임은 인덱싱을 할 때도 열 라벨(column label)을 키값으로 생각하여 인덱싱 할 수 있다. 인덱스로 라벨 값을 하나만 넣으면 시리즈(series) 객체가 반환되고 라벨의 배열 또는 리스트를 넣으면 부분적인 데이터프레임이 반환된다.">
     <meta name="generator" content="VitePress v1.3.4">
     <link rel="preload stylesheet" href="/assets/style.D2B5PrYF.css" as="style">
-    <script type="module" src="/assets/chunks/metadata.9c52a814.js"></script>
+    <script type="module" src="/assets/chunks/metadata.44a62097.js"></script>
     <script type="module" src="/assets/app.DRm4xOdG.js"></script>
     <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="modulepreload" href="/assets/chunks/theme.wl8MXYHT.js">
     <link rel="modulepreload" href="/assets/chunks/framework.rTf5PlzF.js">
-    <link rel="modulepreload" href="/assets/ko_pandas-dataframe_indexing.md.IukBQwrk.lean.js">
+    <link rel="modulepreload" href="/assets/ko_pandas-dataframe_indexing.md.HCRVcIqt.lean.js">
     <link rel="icon" type="image/png" href="/images/logo.png">
     <meta name="theme-color" content="#5f67ee">
     <meta property="og:type" content="website">
@@ -105,7 +105,7 @@
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 2020        2.8</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 2021        3.1</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 2022        3.0</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 2023        3.2</span></span></code></pre></div><h2 id="행-인덱싱" tabindex="-1">행 인덱싱 <a class="header-anchor" href="#행-인덱싱" aria-label="Permalink to &quot;행 인덱싱&quot;">​</a></h2><h3 id="슬라이싱-slicing-을-통한-행-단위-인덱싱" tabindex="-1">슬라이싱(slicing)을 통한 행 단위 인덱싱 <a class="header-anchor" href="#슬라이싱-slicing-을-통한-행-단위-인덱싱" aria-label="Permalink to &quot;슬라이싱(slicing)을 통한 행 단위 인덱싱&quot;">​</a></h3><div class="language-python vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 첫 번째 행까지 반환</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 2023        3.2</span></span></code></pre></div><!--[--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4523989648752211" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-4523989648752211" data-ad-slot="9977916698" data-ad-format="fluid" data-ad-layout-key="" data-ad-layout="in-article" data-full-width-responsive="false"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({}); </script><!--]--><h2 id="행-인덱싱" tabindex="-1">행 인덱싱 <a class="header-anchor" href="#행-인덱싱" aria-label="Permalink to &quot;행 인덱싱&quot;">​</a></h2><h3 id="슬라이싱-slicing-을-통한-행-단위-인덱싱" tabindex="-1">슬라이싱(slicing)을 통한 행 단위 인덱싱 <a class="header-anchor" href="#슬라이싱-slicing-을-통한-행-단위-인덱싱" aria-label="Permalink to &quot;슬라이싱(slicing)을 통한 행 단위 인덱싱&quot;">​</a></h3><div class="language-python vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 첫 번째 행까지 반환</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">df[:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Value  year  GDP rate    GDP</span></span>
