@@ -7,12 +7,12 @@
     <meta name="description" content="일자 계산방식 또한 휴일과 마찬가지로 국가 그리고 시장마다 적용하는 관행이 다른데, QuantLib 에서는 DayCounter 라는 클래스를 통해 다양한 일자 계산방식을 제공한다">
     <meta name="generator" content="VitePress v1.4.1">
     <link rel="preload stylesheet" href="/assets/style.B22hz0E0.css" as="style">
-    <script type="module" src="/assets/chunks/metadata.7d3f317e.js"></script>
+    <script type="module" src="/assets/chunks/metadata.d31bd9b4.js"></script>
     <script type="module" src="/assets/app.0dUgMiMl.js"></script>
     <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="modulepreload" href="/assets/chunks/theme.C_d7CK_Q.js">
     <link rel="modulepreload" href="/assets/chunks/framework.CdbxnhrM.js">
-    <link rel="modulepreload" href="/assets/ko_quantlib_daycounter.md.iizr7KmN.lean.js">
+    <link rel="modulepreload" href="/assets/ko_quantlib_daycounter.md.BPAHkwJp.lean.js">
     <link rel="icon" type="image/png" href="/images/logo.png">
     <meta name="theme-color" content="#5f67ee">
     <meta property="og:type" content="website">
@@ -63,7 +63,7 @@
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">## Day Count by Actual/Actual = 92</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">## Day Count by 30/360 = 90</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">## Day Count by BusinessDay/252 = 65</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">## Day Count by SimpleDayCount = 90</span></span></code></pre></div><h3 id="yearfraction" tabindex="-1">yearFraction() <a class="header-anchor" href="#yearfraction" aria-label="Permalink to &quot;yearFraction()&quot;">​</a></h3><p><code>yearFraction()</code> 메서드는 특정한 일자 계산방식을 사용했을 때 주어진 두 날짜 사이의 기간을 연단위로 환산하는 기능을 제공한다.<br> 각각의 방식은 1년을 몇일로 계산할 것인가에 따라 각각 다른 결과값을 출력해 준다.<br> 다시 말해 시장 관행 방식을 어떻게 사용하느냐에 따라 계산된 이자금액이 서로 다르다는 의미이다.</p><div class="language-python vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> QuantLib </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">as</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ql</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">## Day Count by SimpleDayCount = 90</span></span></code></pre></div><!--[--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4523989648752211" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-4523989648752211" data-ad-slot="9977916698" data-ad-format="fluid" data-ad-layout-key="" data-ad-layout="in-article" data-full-width-responsive="false"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({}); </script><!--]--><h3 id="yearfraction" tabindex="-1">yearFraction() <a class="header-anchor" href="#yearfraction" aria-label="Permalink to &quot;yearFraction()&quot;">​</a></h3><p><code>yearFraction()</code> 메서드는 특정한 일자 계산방식을 사용했을 때 주어진 두 날짜 사이의 기간을 연단위로 환산하는 기능을 제공한다.<br> 각각의 방식은 1년을 몇일로 계산할 것인가에 따라 각각 다른 결과값을 출력해 준다.<br> 다시 말해 시장 관행 방식을 어떻게 사용하느냐에 따라 계산된 이자금액이 서로 다르다는 의미이다.</p><div class="language-python vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> QuantLib </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">as</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ql</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Construction</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">act360 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ql.Actual360()                          </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># ACT/360</span></span>
